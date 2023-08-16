@@ -40,6 +40,11 @@ h2{
 }
 
 a {
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  text-decoration: none;
   font-family:serif;
   color: #200583;
   text-decoration: none; /* Remove underline if desired */
