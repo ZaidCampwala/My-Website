@@ -1,0 +1,179 @@
+/* MohamedZaidCampwala-Portfolio.css */
+
+/* Reset some default styles */
+body, h1, h2, h3, h4, h5, p, ul, li, form, input, textarea, button {
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+  }
+  
+  /* Set some global styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #392525;
+    background-color:  #52afce;
+  }
+  
+  h1, h2, h3, h4,h5 {
+    margin-bottom: 50px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration:none;
+    color: #060300;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #52afce;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .container {
+    
+    display:grid;
+    grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
+    gap: 30px; /* Adjust the gap between columns */
+
+  }
+  
+  .column {
+    display:grid;
+    grid-template-columns: repeat(1, 1fr); /* Adjust the number of columns as needed */
+    gap: 0px; /* Adjust the gap between columns */
+    background-color: #52afce;
+    padding: 25px;
+    transition: background-color 0.3;
+  }
+  
+  .inner-column {
+    max-height: 100%;
+    grid: 1/ 2;
+    background-color: #000c10;
+  }
+ 
+  .inner-column:hover{
+    background-color: #52afce;
+
+  } 
+
+  header h1 {
+    font-family:serif;
+    font-size: 75px;
+  }
+  
+  header nav ul li {
+    font-family:serif;
+    display: inline-block;
+    margin-right: 50px;
+  }
+  
+  /* Main section styles */
+  section {
+    background-color: #6192aa;
+    padding: 50px;
+    margin-bottom: 40px;
+    
+  }
+  
+  section:hover {
+    background-color: #b7e2b2;   
+  }
+
+  section h1 {
+    font-family:serif;
+    font-size: 30px;
+    padding-left: 35%;
+    margin-bottom: 50px;
+  }
+
+  section h2 {
+    font-family:serif;
+    font-size: 30px;
+    padding-left: 40%;
+    margin-bottom: 50px;
+  }
+
+  section h3 {
+    color: aquamarine;
+    font-family:serif;
+    font-size: 24px;
+    padding-left: 40%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin-bottom: 10px;
+  }
+  section h4 {
+    color: aquamarine;
+    font-family:serif;
+    font-size: 24px;
+    padding-left: 40%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin-bottom: 10px;
+  }
+  section h5 {
+    font-family:serif;
+    font-size: 30px;
+    padding-left: 35%;
+    margin-bottom: 20px;
+  }
+  .paragraph {
+    font-family:serif;
+    font-size: 16.5px;
+    padding-bottom: 48px; /* Adjust the padding value as needed */
+  }
+  
+  /* Portfolio section styles */
+  .portfolio-item {
+    font-family:serif;
+    margin-bottom: 72px;
+  }
+  
+  .portfolio-item video {
+    padding-left: 25%;
+    max-width: 50%;
+  }
+  
+  .portfolio-item h3 {
+    font-family:serif;
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+  
+
+  /* Contact section styles */
+  form input,
+  form textarea,
+  form button {
+    margin-bottom: 60px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  form button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color:  #52afce;
+    color: #0e0101;
+    text-align: center;
+    padding: 10px;
+  }
+
+ 
+  
+  
+  
