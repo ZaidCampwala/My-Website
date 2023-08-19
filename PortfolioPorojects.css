@@ -27,9 +27,7 @@ h2{
     padding: 20px;
     display:flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    height: 70vh;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px; /* Adjust the gap between columns */
 }
@@ -50,17 +48,22 @@ h2{
   }
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   body {
     font-size: 14px;
-  }
-
-  .container {
-    padding: 10px;
   }
   .row{
     grid-template-columns: repeat(2, 390px);
   }
+  .container {
+    padding: 80px !important;
+}
+.column {
+  flex: 100%; /* Make columns stack vertically */
+}
+a.back-button {
+  margin-left: -20px;
+}
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -73,17 +76,10 @@ h2{
     padding: 20px;
   }
 }
-@media (max-width: 767px) {
-  .column {
-    flex: 100%; /* Make columns stack vertically */
-  }
-}
 .center-text {
   text-align: center;
 }
-a.back-button {
-  margin-left: 50px;
-}
+
 h1{font-size: 40px;}
 
 .center-content {
@@ -129,9 +125,10 @@ a:active {
   /* Apply specific styles to each column */
 .row{
  display: grid;
-  grid-template-columns: repeat(4, 300px); /* Adjust as per your requirements */
+  grid-template-columns: repeat(2, 500px); /* Adjust as per your requirements */
   gap: 30px; /* Adjust as per your requirements */
   transition: background-color 0.3;
+  padding: 35px;
  }
 
  .column {
