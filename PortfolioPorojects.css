@@ -58,6 +58,9 @@ h2{
   .container {
     padding: 10px;
   }
+  .row{
+    grid-template-columns: repeat(2, 390px);
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -78,6 +81,10 @@ h2{
 .center-text {
   text-align: center;
 }
+a.back-button {
+  margin-left: 50px;
+}
+h1{font-size: 40px;}
 
 .center-content {
   display: flex;

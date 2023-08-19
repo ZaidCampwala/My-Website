@@ -47,7 +47,7 @@ body, h1, h2, h3, h4, h5, p, ul, li, form, input, textarea, button {
     }
   }
   
-  @media (max-width: 767px) {
+  @media only screen and (max-width: 767px) {
     body {
       font-size: 14px;
     }
@@ -55,6 +55,37 @@ body, h1, h2, h3, h4, h5, p, ul, li, form, input, textarea, button {
     .container {
       padding: 10px;
     }
+    body > header > h1 {
+      font-size: 33px;
+  }
+  #about > h1 {
+    padding-left: 0%;
+    text-align: center;
+}
+section#about {
+  padding: 15px;
+  border-radius: 20px;
+}
+#about > p {
+  padding-bottom: 0;
+}
+.column {padding: 0px 25px;}
+#portfolio > h2 {
+  padding-left: 0;
+  text-align: center;
+}
+#portfolio > div > div > a > h4 {
+  padding-left: 25%;
+}
+section#portfolio {
+  border-radius: 20px;
+}
+.inner-column {
+  border-radius: 20px;
+}
+
+
+
   }
   
   @media (min-width: 768px) and (max-width: 1023px) {
