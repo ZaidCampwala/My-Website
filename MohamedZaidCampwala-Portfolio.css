@@ -35,11 +35,50 @@ body, h1, h2, h3, h4, h5, p, ul, li, form, input, textarea, button {
     text-align: center;
   }
 
+  @media screen and (min-width: 768px) {
+    .element {
+      width: 50%;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .element {
+      width: 33.33%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    body {
+      font-size: 14px;
+    }
+  
+    .container {
+      padding: 10px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+      padding: 15px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .container {
+      padding: 20px;
+    }
+  }
+  @media (max-width: 767px) {
+    .column {
+      flex: 100%; /* Make columns stack vertically */
+    }
+  }
   .container {
     
     display:grid;
-    grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
-    gap: 30px; /* Adjust the gap between columns */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 30px; /* Adjust the gap between column grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
+    
 
   }
   
