@@ -24,9 +24,9 @@ h2{
   width: 100%;
 }
 #nav>a{
-  margin-top: 1%;
+  margin-top: 6%;
+  margin-left: 2%;
   display: flex;
-  padding: 30px 30px;
   position: absolute;
   z-index: 9;
   text-decoration: none;
@@ -48,12 +48,13 @@ h2{
   color: #392525;
   background-color: #e0e1db;
 }
+
 .container{
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px;
   display:flex;
   flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
   align-items: center;
   gap: 10px;
 }
@@ -67,6 +68,7 @@ h2{
   align-items: center;
 }
 a{
+  flex: 1;
   padding-top: 15px;
   padding-right: 20px;
   padding-bottom: 15px;
@@ -92,14 +94,15 @@ a:active{
 }
 .row{
   display: grid;
-  grid-template-columns: repeat(2, minmax(200px, 1fr)); 
+  grid-template-columns: repeat(2, minmax(400px, 1fr)); 
   gap: 50px;
   transition: background-color 0.3;
   padding: 10%;
 }
 .column{
-  display:grid;
-  grid-template-columns: repeat(1, 1fr);
+  flex: 1;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(1, minmax(400px 1fr));
   gap: 0px; 
   background-color: #e0e1db;
 }
