@@ -24,6 +24,7 @@ h2{
   font-family:serif;
   text-align: center;
   padding: 2%;
+  font-size: 24px;
 }
 h3{
   font-family:serif;
@@ -31,6 +32,7 @@ h3{
   padding-left:3%;
   margin-top: 0%;
   margin-bottom: 0%;
+  font-size: 24px;
 }
 #page>#nav{
   display: flex;
@@ -78,8 +80,8 @@ h3{
   padding-left: 3%;
   padding-right: 3%;
   font-family:serif;
-  font-size: 15px;
-  color: #decece;
+  font-size: 17.5px;
+  color: #342323;
 }
 .container{
   display:flex;
@@ -135,10 +137,10 @@ a:active{
 .column{
   flex: 1;
   flex-wrap: wrap;
+  border-radius: 25px;
   grid-template-columns: repeat(1, minmax(400px 1fr));
   gap: 0px; 
-  background-color: #70745d;
-  
+  background-color: #877b7b;  
 }
 .row :hover{
     background-color: #7a6b6b;
