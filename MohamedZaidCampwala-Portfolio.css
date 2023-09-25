@@ -7,9 +7,19 @@ body, h1, h2, h3, h4, h5, p, ul, li, form, input, textarea, button{
 body{
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  color: #392525;
-  background-color:  #f1f7ea;
+  color: #959395;
 }  
+.bkg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(90deg, #424445, #8a716f, #424445,#8a716f);
+  background-size: 400% 400%;
+  animation: gradient 10s infinite;
+}
 h1, h2, h3, h4,h5{
   margin-bottom: 50px;
 }  
@@ -21,7 +31,9 @@ a{
   color: #060300;
 }
 header{
-  background-color: #e0e1db;
+  background: linear-gradient(90deg, #424445, #8a716f, #424445,#8a716f);
+  background-size: 400% 400%;
+  animation: gradient 10s infinite;
   padding: 2% 0%;
   text-align: center;
 }
@@ -43,7 +55,7 @@ header{
   background-color: #000c10;
 }
 .inner-column:hover{
-  background-color: #52afce;
+  background-color: #959395;
 } 
 header h1{
   font-family:serif;
@@ -55,12 +67,12 @@ header nav ul li{
   margin-right: 50px;
 }
 section{
-  background-color: #e0e1db;
+  background-color: #161a03;
   padding: 50px;
   margin-bottom: 30px;
 }
 section:hover{
-  background-color: #b7e2b2;   
+  background-color: #473e3e;
 }
 section h1{
   font-family:serif;
@@ -93,7 +105,7 @@ section h4{
   padding-left: 10% ;
   font-size: 100%;
   text-align: center;
-  color: aquamarine;
+  color: #d2d0d2;
 
 }
 section h5{
@@ -107,7 +119,7 @@ section h5{
   font-family:serif;
   font-size: 16.5px;
   padding-bottom: 48px; 
-  color: #796868;
+  color: #959395;
 }
 .portfolio-item{
   font-family:serif;
@@ -126,6 +138,14 @@ footer{
   color: #0e0101;
   text-align: center;
   padding: 10px;
+}
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
 }
 @media screen and (min-width: 768px){
   .element {

@@ -4,7 +4,17 @@ body{
   font-family:serif;
   line-height: 1.6;
   color: #392525;
-  background-color:  #f1f7ea;
+  }
+  .bkg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(90deg, #424445, #8a716f, #424445,#8a716f);
+    background-size: 400% 400%;
+    animation: gradient 10s infinite;
   }
 h1{
   text-align: center;
@@ -55,6 +65,9 @@ h3{
   margin-top: 16px;
   color: #392525;
   background-color: #e0e1db;
+  background: linear-gradient(90deg, #424445, #8a716f, #424445,#8a716f);
+  background-size: 400% 400%;
+  animation: gradient 10s infinite;
 }
 #description>p{
   line-height: 130%;
@@ -65,8 +78,8 @@ h3{
   padding-left: 3%;
   padding-right: 3%;
   font-family:serif;
-  font-size: 14.3px;
-  color: #796868;
+  font-size: 15px;
+  color: #decece;
 }
 .container{
   display:flex;
@@ -124,10 +137,19 @@ a:active{
   flex-wrap: wrap;
   grid-template-columns: repeat(1, minmax(400px 1fr));
   gap: 0px; 
-  background-color: #e0e1db;
+  background-color: #70745d;
+  
 }
 .row :hover{
-    background-color: #b7e2b2;
+    background-color: #7a6b6b;
+}
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
 }
 @media screen and (min-width: 768px){
   .element{
