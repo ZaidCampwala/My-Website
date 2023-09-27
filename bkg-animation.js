@@ -1,4 +1,4 @@
-const backgroundElement = document.getElementById('background');
+const backgroundElement = document.getElementById('bkg');
 
 // Function to update the background position
 function updateBackgroundPosition() {
