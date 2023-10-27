@@ -30,12 +30,7 @@ i{
   flex: 1;
   margin: 0.1%;
 }
-header {
-  display: flex;
-  text-align: center;
-  box-sizing: content-box;
-  margin-bottom: auto;
-}
+
 h3{
   display: flex;
   text-align: center;
@@ -70,25 +65,19 @@ color: #fa0404;
 }
 #nav>header{ 
   display:flex;
-  padding: 5% 0px;
-  margin-bottom: 5%;
-  position: absolute;
-  height: 10%;
   width: 100%;
-  font-size: 300%;
+  padding-top: 5%;
+  font-size: 60px;
   color: #cf700a;
   max-width: 100%;
-  max-height: 10%; /* Adjust the value as needed */
-  overflow: hidden;
   justify-content:center;
-
 }
 .container{ 
   overflow: visible;
   display:flex;
   flex-wrap: wrap;
   margin: 0% auto;
-  padding: 0px;
+  padding-bottom: 0%;
   align-items: center;
   gap: 10px;
   box-sizing:content-box;
@@ -99,7 +88,8 @@ color: #fa0404;
   grid-template-columns: repeat(2, minmax(200px, 1fr)); 
   gap: 50px;
   transition: background-color 0.3;
-  padding: 10%;
+  padding-top: 5%;
+  padding: 5%;
   margin-top: 3%;
 }
 .column{
@@ -155,10 +145,10 @@ h2{
 }
 @media only screen and (max-width: 767px){
   body{
-    display: flex;
     font-size: 14px;
   } 
   header {
+    font-size: 24px !important;
     flex-direction: column;
     align-items: center;
   }
@@ -186,12 +176,12 @@ h2{
 }
 @media (min-width: 768px) and (max-width: 1200px){
   body{
-    display: flex;
     font-size: 14px;
   } 
   header {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   .row{

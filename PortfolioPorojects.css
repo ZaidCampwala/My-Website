@@ -1,5 +1,4 @@
 body{
-  display: flex;
   font-size: 16%;
   font-family:monospace;
   line-height: 1.6;
@@ -58,9 +57,6 @@ h3{
   align-items: center;
   justify-content:center;
   padding: 0px 10px;
-  position: absolute;
-  z-index: 9;
-  height: 10%;
   width: 100%;
   font-size: 60px;
   margin-top: 16px;
@@ -129,7 +125,6 @@ a:active{
   grid-template-columns: repeat(2, minmax(200px, 1fr)); 
   gap: 50px;
   transition: background-color 0.3;
-  padding: 10%;
 }
 .column{
   flex: 1;
@@ -157,7 +152,6 @@ a:active{
 }
 @media only screen and (max-width: 767px){
   body{
-    display: flex;
     font-size: 14px;
   } 
   .row{
@@ -168,8 +162,6 @@ a:active{
     max-width: 1200px;
     display: flex;
     flex-basis: 50%;
-    padding-left: 10%;
-    padding-right: 10%;
   }
   .column{
     max-width: 1200px;
@@ -179,7 +171,6 @@ a:active{
 }
 @media (min-width: 768px) and (max-width: 1200px){
   body{
-    display: flex;
     font-size: 14px;
   } 
   .row{
@@ -191,8 +182,6 @@ a:active{
     max-width: 1200px;
     display: flex;
     flex-basis: 50%;
-    padding-left: 10%;
-    padding-right: 10%;
   }
   .column{
     max-width: 1200px;
