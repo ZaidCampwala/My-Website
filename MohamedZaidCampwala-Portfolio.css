@@ -1,4 +1,15 @@
-
+@font-face{
+  font-family: Basscrw;
+  src: url(./Fonts/basscrw/Basscrw.ttf);
+}
+@font-face{
+  font-family: Roboto;
+  src: url(./Fonts/Roboto/Roboto-MediumItalic.ttf);
+}
+@font-face{
+  font-family: RobotoLight;
+  src: url(./Fonts/Roboto/Roboto-LightItalic.ttf);
+}
 body,h1, h2, p{
   margin-top: 1%;
   justify-content: center;
@@ -6,9 +17,8 @@ body,h1, h2, p{
   overflow-x: hidden;
 }
 body{
-  font-family:monospace;
+  font-family:Roboto;
   line-height: 1.6;
-  color: #cf700a;
 }  
 .bkg{
   position: fixed;
@@ -17,20 +27,50 @@ body{
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color:rgba(0, 0, 0, 0.963);
+  background: linear-gradient(to bottom, #E48E42, #DE6C67);
+}
+.column{
+  flex: 1;
+  flex-wrap: wrap;
+  border-radius: 25px;
+  grid-template-columns: repeat(1, minmax(200px 1fr));
+  gap: 20%; 
+  padding: 3% 10%;
+  transition: background-color 0.3;
+  background-color:#000607;  
+}
+.paragraph {
+  font-family:RobotoLight;
+  font-size: 100%;
+  padding-bottom: 0%; 
+  color:#fafbfc;
+}
+#nav>header{ 
+  display:flex;
+  width: 100%;
+  padding-top: 5%;
+  font-size: 60px;
+  color:#0D001F;
+  max-width: 100%;
+  justify-content:center;
 }
 a{
   flex: 1;
   margin: 0%;
   text-decoration: none;
-  font-family:serif;
+  font-family:Basscrw;
   text-decoration:none;
 }
 i{
   flex: 1;
   margin: 0.1%;
 }
-
+h2{
+  display: flex;
+  text-align: center;
+  font-size: 170%;
+  color:#ffffff;
+}
 h3{
   display: flex;
   text-align: center;
@@ -63,15 +103,6 @@ color: #fa0404;
   height: 16%;
   width: 100%;
 }
-#nav>header{ 
-  display:flex;
-  width: 100%;
-  padding-top: 5%;
-  font-size: 60px;
-  color: #cf700a;
-  max-width: 100%;
-  justify-content:center;
-}
 .container{ 
   overflow: visible;
   display:flex;
@@ -92,16 +123,6 @@ color: #fa0404;
   padding: 5%;
   margin-top: 3%;
 }
-.column{
-  flex: 1;
-  flex-wrap: wrap;
-  border-radius: 25px;
-  grid-template-columns: repeat(1, minmax(200px 1fr));
-  gap: 20%; 
-  padding: 3% 10%;
-  transition: background-color 0.3;
-  background-color:rgba(18, 16, 27, 0.768);  
-}
 .inner-column{
   flex:1;
   flex-wrap: wrap;
@@ -118,12 +139,6 @@ color: #fa0404;
 }
 h2{
   text-align: center;
-}
-.paragraph {
-  font-family:monospace;
-  font-size: 110%;
-  padding-bottom: 0%; 
-  color: #85cced;
 }
 @keyframes gradient {
   0% {
