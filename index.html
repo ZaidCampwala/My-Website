@@ -12,7 +12,7 @@
 <nav>
   <ul class="info">
     <li><a href="#About-Section">About</a></li>
-    <!-- <li><a href="#">Game</a></li> -->
+    <li><a href="#Game-Section">Game</a></li>
     <li><a href="#Projects-Section">Projects</a></li>
     <li>||</li>
   </ul>
@@ -28,24 +28,76 @@
   </ul>
 </nav>
 
-<div class="hero"></div>
+<div class="hero">  </div>
 
-<div class="waves"></div>
-  <section id="About-Section">
-    <div class="about">
-        <h2>About Me</h2>
-            <p class="paragraph"> I am a Game Programmer based out of Ontario, Canada.
-              I am immensely passionate about programming and possess a solid foundation in game design/development principles,object-oriented programming,
-              data structures and algorithms, gameplay mechanics, and interactive storytelling.
-              I have a professional background in programming, which includes completing an internship at Wiz Robotics,
-              where I collaborated with a mentor to teach Python to children aged 6 to 17. I also have experience working with industry-standard tools and technologies, 
-              such as Unity 3D and Unreal Engine, and frameworks like Vulkan, OpenGL, and SDL. I am proficient in programming languages like C++, C#, 
-              Python and also in web developing languages like HTML5, CSS. In my previous projects, I have collaborated with multidisciplinary 
-              teams to develop and implement game mechanics, design levels, and optimize performance. I have done most of my work on graphical projects using 
-              Vulkan, OpenGL and SDL frameworks. My projects highlight my knowledge and skills.
+<section id="About-Section"> 
+  <div class="about"> 
+  <h2>About Me</h2>
+        <div class="wrap-collabsible"> <input id="collapsible0" class="toggle" type="checkbox"> <label for="collapsible0" class="lbl-toggle"></label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p class="paragraph"> I am a Game Programmer based out of Ontario, Canada.
+                I am immensely passionate about programming and possess a solid foundation in game design/development principles,object-oriented programming,
+                data structures and algorithms, gameplay mechanics, and interactive storytelling.
+                I have a professional background in programming, which includes completing an internship at Wiz Robotics,
+                where I collaborated with a mentor to teach Python to children aged 6 to 17. I also have experience working with industry-standard tools and technologies, 
+                such as Unity 3D and Unreal Engine, and frameworks like Vulkan, OpenGL, and SDL. I am proficient in programming languages like C++, C#, 
+                Python and also in web development languages like HTML5, CSS. In my previous projects, I have collaborated with multidisciplinary 
+                teams to develop and implement game mechanics, design levels, and optimize performance. I have done most of my work on graphical projects using 
+                Vulkan, OpenGL and SDL frameworks. My projects and my game, Zoomer Dash, highlight my knowledge and skills.</p>
+            </div>
+          </div>
+        </div>
+      </div>   
+</section> 
+
+
+<section id="Game-Section">
+  <div class="column-container">
+    <h3>Game</h3>
+      <div class="game-row">
+        <div class="game-column">
+          <video class="video" src="PortfolioAssets/ZoomerDash/ZoomerDash_Trailer.mp4" controls poster="PortfolioAssets/ZoomerDash/Thumbnail.png"></video>
+        <div class="center-content">
+          <p><a href="https://mohamed-zaid.itch.io/zoomer-dash"> Game Link</a></p>
+        </div>
+          <div class="game-row">
+            <div class="image-gallery">
+              <ul class="image-item">
+                <li> <img src="PortfolioAssets/ZoomerDash/Shot2.png" alt="Image 2"></li>
+                <li>  <img src="PortfolioAssets/ZoomerDash/Shot3.png" alt="Image 2"></li>
+              </ul>
+            </div>
+            <div class="image-gallery">
+              <ul class="image-item">
+              <li> <img src="PortfolioAssets/ZoomerDash/Shot6.png" alt="Image 2"></li>
+              <li>  <img src="PortfolioAssets/ZoomerDash/Shot4.png" alt="Image 1"></li>
+              <li>  <img src="PortfolioAssets/ZoomerDash/Shot7.png" alt="Image 2"></li>      
+              </ul> 
+            </div>  
+          </div>
+        </div>
+        <div class="game-column">
+          <h5>Zoomer Dash</h5>     
+            <p class="description"> Zoomer Dash is a third-person 3D Platformer created in Unreal Engine 4.
+              The clock is always ticking for the speedrun. Climb objects, jump your way to the next path, bounce around on the jump pad, make your way
+              trough the maze, all this without FALLING. The game is set to challenge the player and force the audience to use their problem solving skills in the fast and engaging environment.
             </p>
+            <div class="tags">
+              <ul class="tags-item">
+              <li>Action</li>
+              <li>3D</li>
+              <li>Speedrun</li> 
+              <li>Platformer</li>   
+              <li>Short</li>    
+              </ul> 
+            </div> 
+        </div>
+      </div>
     </div>
+  </div>
 </section>
+
 
 <section id="Projects-Section">
   <div class="column-container">
@@ -70,7 +122,7 @@
 
          <div class="column">
             <h4>C++ Concurrency</h4>
-            <video class="video" src="PortfolioAssets/Projects/Assignment6.mp4" controls></video>
+            <video class="video" src="PortfolioAssets/Projects/Assignment6.mp4" controls poster="PortfolioAssets/Multithreading.png" ></video>
           <div class="center-content">
             <p><a href="https://github.com/ZaidCampwala/C-Concurrency"> Project Link</a></p> 
           </div>
@@ -182,6 +234,7 @@
         </div>
       </div>
     </div>
+</div>
 </section>
 
 <footer>
