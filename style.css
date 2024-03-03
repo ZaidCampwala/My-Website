@@ -15,8 +15,8 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0%;
+  padding: 0%;
   box-sizing: border-box;
   overflow-x: hidden;
   background-color:  #f4d0d0;
@@ -203,7 +203,7 @@ li {
   background-size: 100%;
   display:flex;
   flex-wrap: wrap;
-  margin: 0% auto;
+  margin: 0% 0%;
   margin-bottom: 0%;
   align-items: center;
   box-sizing:content-box;
@@ -221,8 +221,8 @@ li {
 .row{
   display: grid;
   grid-template-columns: repeat(4, minmax(100px, 1fr));
-  gap: 20px;
-  padding: 40px;
+  gap: 2%;
+  padding: 4%;
 
 }
 
@@ -235,6 +235,10 @@ li {
   border-color: #fefdfd;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 .left-content {
     display: flex;
     font-size: 18px;
@@ -253,7 +257,7 @@ li {
   flex: 1;
   flex-wrap: wrap;
   border-radius: 25px;
-  gap: 0px;
+  gap: 0%;
   grid-template-columns: repeat(1, minmax(100px, 1fr));
   background-color: #0c0c0c;
   padding: 3%;
@@ -264,7 +268,7 @@ li {
   flex: 1;
   flex-wrap: wrap;
   border-radius: 2px;
-  gap: 0px;
+  gap: 0;
   grid-template-columns: repeat(1, minmax(100px, 1fr));
   background-color: #0e0707;
   padding: 3%;
